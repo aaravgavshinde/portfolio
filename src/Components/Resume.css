@@ -1,0 +1,25 @@
+.resume-div{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url('../images/bg3-c.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resume{
+    position: fixed;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.resume a{
+    color: white;
+    text-decoration: none;
+}
+
+.resume i{
+    color: #00d2dd;
+}

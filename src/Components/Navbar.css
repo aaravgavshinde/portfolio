@@ -1,0 +1,105 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-list{
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(14, 15, 18);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-list ul {
+    display: grid;
+    list-style: none;
+    background-color: rgb(14, 15, 18);
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+}
+
+.nav-list ul li {
+    margin: 25px 12px 45px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00f2ff, #008a92, #00f2ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    background-size: 600% auto;
+    animation: Animation-1 1.3s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+.nav-list ul li:hover{
+    background: linear-gradient(to right, #ffffff, #e2e2e2, #959595);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    background-size: 600% auto;
+    animation: Animation-1 1.3s ease-in-out infinite alternate;
+    text-shadow: 0.1px 0.1px 2px rgb(220, 220, 220);
+}
+
+.link-active{
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    background-size: 600% auto;
+    animation: Animation-1 1.3s ease-in-out infinite alternate;
+    text-shadow: 0.1px 0.1px 20px #70f8ff;
+}
+
+@keyframes Animation-1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media screen and (min-height: 571px) and (max-height: 670px) {
+    .nav-list ul li{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-height: 511px)  and (max-height: 570px) {
+    .nav-list ul li{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-height: 451px) and (max-height: 510px) {
+    .nav-list ul li{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-height: 0px) and (max-height: 450px) {
+    .nav-list ul li{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 638px) {
+    .nav-list ul li{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 20px 0px 5px 0px;
+    }
+    .nav-list{
+        min-width: 120px;
+    }
+}
